@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Monitoramento de Streaming</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="styles/style.min.css" />
+</head>
+
+<body>
+  <div class="container  container--small">
+    <div class="container__top">
+      <div class="result-container  visuallyhidden">
+        <a href="https://twitter.com/share?text=I’ve wasted time watching TV shows. Calculate your time:&url=http://kuldeepsinghsidhu.com/time" class="sharing-link" title="Share result on Twitter">
+          <span class="sharing-link__text">Compartilhar</span>
+          <span class="sharing-link__icon"><span class="icon-twitter"></span></span>
+          <span class="sharing-link__text">Resultado</span>
+        </a>
+
+        <div class="container__top__previous-show-time"></div>
+
+        <div class="container__top__horas-wasted">
+          <div class="horas-wasted__dias">
+            <span class="numbers" id="dias">00</span>
+            <span class="description">dias</span>
+          </div>
+          <div class="horas-wasted__horas">
+            <span class="numbers" id="horas">00</span>
+            <span class="description">horas</span>
+          </div>
+          <div class="horas-wasted__minutos">
+            <span class="numbers" id="minutos">00</span>
+            <span class="description">minutos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <form class="container__inputs  cf">
+      <input type="text" class="tvshow" placeholder="Digite uma série" title="Nome da série" />
+      <input type="number" class="seasons" min="1" max="26" placeholder="#" maxlength="2" required title="Número de temporadas que você assistiu" />
+      <span class="description  seasons-description  visuallyhidden">Temporadas</span>
+      <button class="icon-arrow-right  btn  submit  hiding" title="Add this TV show (Enter)"></button>
+    </form>
+
+
+    <ul class="container__list-of-shows"></ul>
+  </div>
+
+
+
+  <div class="about">
+    <a href="#" class="about__icon  btn  icon-question  js-show-modal" title="Sobre o projeto (Esc)"></a>
+
+    <div class="about__content  hide">
+      <a href="#" tabindex="-1" class="about__icon  btn icon-close  visuallyhidden  js-hide-modal" title="Voltar (Esc)"></a>
+
+      <div class="about__content__inner">
+        <h2>Trabalho de Personal Informatics.</h2>
+        <h3>Conceito, design e código por: <a href="https://www.facebook.com/vitoria.lemes.5" tabindex="-1">Maria Vitória</a> e <a href="https://www.facebook.com/rafaeldemattosmedeiros" tabindex="-1">Rafael Medeiros</a>.</h3>
+        <small>Tema: Calcular tempo gasto com séries em plataformas de Streaming </small>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Adds TV show background image to site -->
+  <span class="bg"></span>
+
+
+
+  <!-- JS scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="scripts/app.min.js"></script>
+
+</body>
+</html>
